@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/liushuangls/go-anthropic/v2"
-	"github.com/liushuangls/go-anthropic/v2/internal/test"
-	"github.com/liushuangls/go-anthropic/v2/internal/test/checks"
+	"github.com/le-vlad/go-anthropic/v2"
+	"github.com/le-vlad/go-anthropic/v2/internal/test"
+	"github.com/le-vlad/go-anthropic/v2/internal/test/checks"
 )
 
 var (

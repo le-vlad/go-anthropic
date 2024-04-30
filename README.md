@@ -1,7 +1,7 @@
 # go-anthropic
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/liushuangls/go-anthropic/v2.svg)](https://pkg.go.dev/github.com/liushuangls/go-anthropic/v2)
-[![Go Report Card](https://goreportcard.com/badge/github.com/liushuangls/go-anthropic/v2)](https://goreportcard.com/report/github.com/liushuangls/go-anthropic/v2)
+[![Go Reference](https://pkg.go.dev/badge/github.com/le-vlad/go-anthropic/v2.svg)](https://pkg.go.dev/github.com/le-vlad/go-anthropic/v2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/le-vlad/go-anthropic/v2)](https://goreportcard.com/report/github.com/le-vlad/go-anthropic/v2)
 [![codecov](https://codecov.io/gh/liushuangls/go-anthropic/graph/badge.svg?token=O6JSAOZORX)](https://codecov.io/gh/liushuangls/go-anthropic)
 [![Sanity check](https://github.com/liushuangls/go-anthropic/actions/workflows/pr.yml/badge.svg)](https://github.com/liushuangls/go-anthropic/actions/workflows/pr.yml)
 
@@ -17,7 +17,7 @@ Anthropic Claude API wrapper for Go (Unofficial). Support:
 ## Installation
 
 ```
-go get github.com/liushuangls/go-anthropic/v2
+go get github.com/le-vlad/go-anthropic/v2
 ```
 
 Currently, go-anthropic requires Go version 1.21 or greater.
@@ -33,7 +33,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
+	"github.com/le-vlad/go-anthropic/v2"
 )
 
 func main() {
@@ -67,7 +67,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
+	"github.com/le-vlad/go-anthropic/v2"
 )
 
 func main() {
@@ -109,7 +109,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
+	"github.com/le-vlad/go-anthropic/v2"
 )
 
 func main() {
@@ -168,8 +168,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
-	"github.com/liushuangls/go-anthropic/v2/jsonschema"
+	"github.com/le-vlad/go-anthropic/v2"
+	"github.com/le-vlad/go-anthropic/v2/jsonschema"
 )
 
 func main() {

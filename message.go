@@ -3,6 +3,8 @@ package anthropic
 import (
 	"context"
 	"net/http"
+
+	"github.com/le-vlad/go-anthropic/v2/jsonschema"
 )
 
 type MessagesResponseType string
@@ -175,9 +177,9 @@ type MessageContentImageSource struct {
 }
 
 type MessageContentToolUse struct {
-	ID    string `json:"id,omitempty"`
-	Name  string `json:"name,omitempty"`
-	Input any    `json:"input,omitempty"`
+	ID    string         `json:"id,omitempty"`
+	Name  string         `json:"name,omitempty"`
+	Input map[string]any `json:"input,omitempty"`
 }
 
 type MessagesResponse struct {
@@ -212,7 +214,7 @@ type ToolDefinition struct {
 	// or you can pass in a struct which serializes to the proper JSON schema.
 	// The jsonschema package is provided for convenience, but you should
 	// consider another specialized library if you require more complex schemas.
-	InputSchema any `json:"input_schema"`
+	InputSchema jsonschema.Definition `json:"input_schema"`
 }
 
 func (c *Client) CreateMessages(ctx context.Context, request MessagesRequest) (response MessagesResponse, err error) {
